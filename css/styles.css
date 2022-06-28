@@ -1,163 +1,467 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background: linear-gradient(to bottom right, #000000, #006eff);
     max-height: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Microsoft PhagsPa', cursive;
+    width: 1440px;
+    margin: auto;
+    background-color: #FFFFFF;
 }
 *, ::after, ::before {
     box-sizing: border-box;
-  }
+}
 ::-webkit-scrollbar {
     width: 0;
 }
+.Back_top{
+    display: flex;
+    justify-content: center;
+}
+.Back_top>img{
+    position: absolute;
+    z-index: 0;
+}
 header{
-    width: 100%;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    z-index: 2;
-}
-footer{
-    width: 100%;
-    background-color: #000000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-footer>div>img{
-    width: 15%;
-    background-color: #ffffff;
-    padding: 1%;
-}
-footer>div>img:hover{
-    cursor: pointer;
-}
-footer>div{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2% 1%;
-    width: 70%;
+    width: 1440px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: rgba(242, 120, 92, 0.7);
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    color: white;
+    padding: 0px 120px;
 }
-main{
-    background-color: rgba(255, 255, 255, 0.25);
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 100px rgba(0,0,0,0.5);
-    padding: 3% 5%;
+header>div>p{
+    font-family: 'Magra';
+    font-style: normal;
+    letter-spacing: 0.45px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
 }
-h1{
-    font-family: 'Maiandra GD';
-    font-size: 3rem;
-    font-weight: 200;
-}
-h2{
-    font-family: 'Maiandra GD';
-    font-size: 2.1rem;
-    font-weight: 100;
-}
-section>div>img{
-    width: 70%;
-    margin-top: 11%;
-    box-shadow: 10px 10px rgba(0,0,0,0.5);
-}
-header>nav>ul{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+header>div>svg{
+    margin-top: -5px
 }
 a{
     text-decoration: none;
     color: white;
 }
-a:hover{
-    border-bottom: 3px solid #006eff;   
+header>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 31px;
+    width: 208px;
 }
-li{
-    list-style-type: none;
-    margin: 2% 0;
+header>button{
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    width: 103px;
+    height: 41px;
 }
 header>nav>ul>li{
-    margin: 0;   
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0;
 }
-aside{
-    width: 30%;
-    float: right;
-}
-section{
+header>nav>ul{
+    padding: 0;
+    margin: 0;
+    width: 527px;
     display: flex;
-    border-right: 5px dotted rgba(255, 255, 255, 0.5);
-    margin-right: 35%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
-section>div{
-    width: 50%;
+header>nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: -30px;
 }
-svg{
-    margin-right: 5%;
+li {
+    list-style-type: none;
 }
-.push {
-    list-style: none;
-    column-count: 2;
-}
-.push li {
-    position: relative;
-    padding: 20px 0 20px 40px;
-}
-.push li:before {
+.preview{
+    width: 1440px;
     position: absolute;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    content: "";
-    left: 0;
-    transition: .3s ease-in-out;
-    top: 27px;
     z-index: 1;
+    top: 122px;
 }
-.push li:after {
-    position: absolute;
-    border-left: 1px dotted rgba(255, 255, 255, 0.5);
-    width: 1px;
-    bottom: -12px;
-    content: "";
-    left: 3px;
-    top: 48px;
+.preview>div{
+    width: 892px;
+    margin-left: 120px;
+    color: #FFFFFF;
 }
-.push li:hover:before{
-    box-shadow: 0 0 0 10px rgba(0,0,0,.2)
+.preview>h1{
+    width: 1000px;
+    padding-left: 120px;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
 }
-.push li:last-child:after {
-    content: none;
+.preview>div>p{
+    margin-top: 33px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
-pre{
-    font-size: 1.0rem;
-    box-shadow: 10px 10px rgba(0,0,0,0.5);
-    background-color: rgba(255, 255, 255, 0.25);
+.preview>div>div{
+    margin-top: 46px;
+    width: 892px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
 }
-.span1{
-    color: #000000;
-}
-.span2{
-    color: #0059cd;
-}
-.span3{
-    color: #515151;
-}
-.span4{
-    color: #94c2ff;
-}
-button{
-    background: #00000000;
+input{
+    background-color: #0d606f00;
     border-style: none;
+    width: 560px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 20px;
 }
-button:hover{
+input::placeholder {
+    color: #F2785C;
+}
+.preview>div>div>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 229px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.steps{
+    width: 1440px;
+    position: absolute;
+    z-index: 1;
+    top: 845px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.steps>h2{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.mini_steps{
+    width: 1177px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+.mini_steps>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mini_steps>div>div{
+    width: 100px;
+    height: 100px;
+    background: #F2785C;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.step_2{
+    margin-left: 72px;
+}
+.destinations{
+    width: 1440px;
+    position: absolute;
+    z-index: 1;
+    top: 1189px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.destinations>h2{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 0;
+}
+.destinations>button{
+    padding: 0 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 40px;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider>div{
+    width: 800px;
+    height: 800px;
+    border-radius: 16px;
+    margin: 0 30px;
+    margin-top: 46px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    padding: 8px 15px;
+}
+.ellipses{
+    margin-top: 24px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ellipse{
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+}
+.ellipse.active{
+    background: #F2785C;
+}
+.Back_down{
+    display: flex;
+    justify-content: center;
+}
+.Back_down>img{
+    top: 2404px;
+    position: absolute;
+    z-index: 0;
+}
+.stories{
+    width: 1440px;
+    position: absolute;
+    top: 2311px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stories>h2{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.stories>div{
+    width: 1442px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 25px;
+}
+.stories>div>div{
+    width: 1200px;
+    display: flex;
+    margin: 15px 0;
+}
+.stories>div>div>div{
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+}
+.stories>div>div>img{
+    width: 400px;
+    height: 250px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+    margin-right: 40px;
+}
+.stories>div>div>div>h3{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0;
+}
+.stories>div>div>div>p{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin: 0;
+    margin-top: 25px;
+}
+.stories>div>div>div>a{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    margin: 0;
+}
+.stories>div>button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    align-items: center;
+    width: 228px;
+    height: 59px;   
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    padding: 0 39px 0 33px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 26px 0 40px 4px;
+}
+footer{
+    margin-left: 15px;
+    width: 1440px;
+  
+    position: absolute;
+    top: 3674px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 5px;
+}
+.rights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rights>p{
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.social{
+    text-align: end;
+    margin-right: 121.04px;
+    margin-left: 328px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social>svg{
+    margin-right:18px;
+}
+button:hover {
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 -10px 5px -4px rgba(255, 255, 255, 0.4);
+}
+.more:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 -10px 5px -4px rgba(255, 255, 255, 0.4);
+}
+.start:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 -10px 5px -4px rgba(255, 255, 255, 0.4);
+}
+li>a:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #0D606F;
+}
+.social>svg:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
 }
