@@ -1,1 +1,1 @@
-* [rsschool-cv](https://Chekan-Liza.github.io/rsschool-cv/)
+* [rsschool-cv](https://chekan-liza.github.io/rsschool-cv/cv)
